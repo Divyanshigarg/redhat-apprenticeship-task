@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-image">
+        <img
+          src="Images/Brand_Standars-Red_Hat-_color_on-black.svg"
+          height="100%"
+          width="100%"
+          alt=""
+        />
+      </div>
+
+      <div class="title">Apprenticeship Registration Form</div>
+    </header>
+
+    <div class="container">
+      <div class="form-container">
+        <form action="">
+          <label for="first-name">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="first-name"
+            placeholder="Enter your name"
+          />
+          <label for="last-name">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="last-name"
+            placeholder="Enter your last name"
+          />
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Enter your email" />
+
+          <label for="Mobile-number">Mobile number</label>
+          <input
+            type="text"
+            id="number"
+            name="Mobile-number"
+            placeholder="Enter your number"
+            required
+          />
+          <label for="current-location">Current Location</label>
+          <input
+            type="text"
+            id="location"
+            name="current location"
+            placeholder="Enter your current location"
+          />
+          <p class="gender-title"><u>Gender :</u></p>
+          <input type="radio" id="gender-details" name="gender" value="Male" />
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            id="gender-details"
+            name="gender"
+            value="Female"
+          />
+          <label for="female">Female</label><br />
+          <div class="implement-js"></div>
+
+          <label for="birthday">Date Of Birth</label><br />
+          <input type="date" id="birthday" name="birthday" />
+
+          <p class="skill-bar-title">Skill Bar</p>
+          <p class="skills">HTML</p>
+          <div class="rangeslider">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="10"
+              class="myslider"
+              id="sliderRange"
+              onchange="update(this.value,0)"
+            />
+            <p class="val-slider">Value: <span id="demo"></span></p>
+          </div>
+
+          <p class="skills">CSS</p>
+          <div class="rangeslider">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="10"
+              class="myslider"
+              id="sliderRange1"
+              onchange="update(this.value,1)"
+            />
+            <p class="val-slider">Value: <span id="demo1"></span></p>
+          </div>
+
+          <p class="skills">JavaScript</p>
+          <div class="rangeslider">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="10"
+              class="myslider"
+              id="sliderRange2"
+              onchange="update(this.value,2)"
+            />
+            <p class="val-slider">Value: <span id="demo2"></span></p>
+          </div>
+          <input type="submit" value="submit" />
+          <input type="reset" value="reset" />
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
